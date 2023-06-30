@@ -5,16 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "maven"
+    directory: "/"
     schedule:
       interval: "daily"
     allow:
-      # Allow updates for Lodash
       - dependency-name: "org.springframework.boot:spring-boot-starter-web"
       - dependency-name: "com.oracle.database.jdbc:ojdbc8"
-        versions:["21.6.0.0"]
+        versions: ["21.6.0.0"]
       - dependency-name: "org.springframework.boot:spring-boot-starter-data-mongodb"
     ignore:
       - dependency-name: "org.springframework.boot:spring-boot-starter-data-jpa"
-        versions:["^2.7.13"]
+        versions: ["^2.7.13"]
