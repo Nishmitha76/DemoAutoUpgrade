@@ -9,6 +9,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    auto_merge: true  # Enable auto-merge for this package ecosystem
     allow:
       - dependency-name: "org.springframework.boot:spring-boot-starter-web"
       - dependency-name: "com.oracle.database.jdbc:ojdbc8:21.6.0.0"
